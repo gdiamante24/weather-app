@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto"
+    sans-serif;
+    font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-logo {
+    height:50px
+}
+
+.location-text {
+    margin-left:11px;
+    margin-top:10px
+}
+.caret-icon {
+    height:30px;
+    width:auto;
+}
+
+.btn-secondary, .btn-secondary.focus, .btn-secondary:focus {
+    color: #fff;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    box-shadow: 0 0 0 0.2rem #f8f9fa
+}
+
+.city-container {
+    margin: 50px 0px ;
+}
+
+.current-container {
+    border-radius:30px;
+    padding:10px;
+    margin:10px -5px
+}
+
+.current-temp {
+    font-size: 30px;
+}
+
+.current-weather {
+    padding:10px
+}
+
+.current-weather, .weather-list p {
+    margin-bottom: 0;
+}
+
+.weather-list {
+    padding:10px;
+    border-radius:30px;
+    margin:10px;
+    background-color: #d8d8d8;
+}
+
+
+.weather-list-0 {
+    background-color: #dfad3b;
+}
+
+.weather-list-1 {
+    background-color: #d36530;
+}
+
+.weather-list-2 {
+    background-color: #924e50;
+}
+
+.weather-list-3 {
+    background-color: #924e50;
+}
+
+.weather-list-4 {
+    background-color:#162b3b;
+    color:white
+}
+
+.bg-main {
+    height: 68vh;
+    min-height: 500px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.425), 
+        rgba(0, 0, 0, 0.425)
+      ),url('../src/assets/japan.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white
+}
