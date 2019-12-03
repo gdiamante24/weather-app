@@ -34,6 +34,11 @@ class App extends Component {
                 <div className="ss-content">
                     <Home cities={this.state.cities} selected_city={this.state.selected_city}/>
                 </div>
+                <footer id="sticky-footer" className="py-4 bg-dark text-white-50">
+                    <div className="container text-center">
+                    <small>Copyright &copy; Gabriel Diamante</small>
+                    </div>
+                </footer>
             </div>
         );
     }

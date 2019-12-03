@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
 import {Jumbotron,Card,CardImg,CardSubtitle,CardTitle,Row,Col} from 'reactstrap'
-import { OpenWeatherMap } from 'react-weather';
 import Moment from 'react-moment'
 import tokyo from "../assets/tokyo.jpg";
 
@@ -133,7 +132,6 @@ class Home extends Component {
                             <Col md="4" className="current-weather" align="right">
                                 <p>Humidity: {current_forecast.main.humidity}%</p>
                                 <p>Wind: {current_forecast.wind.speed}kph</p>
-                                <p>Wind Direction: {current_forecast.wind.deg}°</p>   
                             </Col> 
                         </Row>
                         <Row>
@@ -150,16 +148,12 @@ class Home extends Component {
                                 )
                             }
                         </Row>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <h1>Tourist Attractions</h1>
+                        <h1 className="page-header">Tourist Attractions</h1>
                         <Row>
                             {
                                 venues.length?
                                 venues.map((venue, j)=>
-                                    <Col lg="12" key={j} align="center">
+                                    <Col lg="12" key={j} align="left">
                                         <p className="current-temp">{venue.name}</p>
                                     </Col>
                                 ):''
